@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebCarAPI.Domain\WebCarAPI.Domain.csproj" />
+    <ProjectReference Include="..\WebCarAPI.Repository\WebCarAPI.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
