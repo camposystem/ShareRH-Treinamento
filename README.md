@@ -1,2 +1,0 @@
-# ShareRH-Treinamento
-ShareRH-Treinamento
