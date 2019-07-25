@@ -1,6 +1,5 @@
-﻿using System;
+﻿using WebCarAPI.Domain.Interfce;
 using System.Collections.Generic;
-using System.Text;
 using WebCarAPI.Domain;
 
 namespace WebCarAPI.Repository.Interface

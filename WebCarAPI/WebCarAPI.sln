@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCarAPI.Service", "WebCar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCarAPI.Business", "WebCarAPI.Business\WebCarAPI.Business.csproj", "{AC571CB5-F4E9-42FD-9DAF-04536892292F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCarAPiTest", "WebCarAPiTest\WebCarAPiTest.csproj", "{97A7C237-8750-4013-B741-670DB8FD15EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AC571CB5-F4E9-42FD-9DAF-04536892292F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC571CB5-F4E9-42FD-9DAF-04536892292F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC571CB5-F4E9-42FD-9DAF-04536892292F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97A7C237-8750-4013-B741-670DB8FD15EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A7C237-8750-4013-B741-670DB8FD15EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A7C237-8750-4013-B741-670DB8FD15EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A7C237-8750-4013-B741-670DB8FD15EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

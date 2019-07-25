@@ -12,6 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebCarAPI.Domain\WebCarAPI.Domain.csproj">
+      <Private>true</Private>
+    </ProjectReference>
     <ProjectReference Include="..\WebCarAPI.Service\WebCarAPI.Service.csproj" />
   </ItemGroup>
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using WebCarAPI.Domain;
+using WebCarAPI.Domain.Interfce;
 using WebCarAPI.Repository.Base;
 using WebCarAPI.Repository.Interface;
 

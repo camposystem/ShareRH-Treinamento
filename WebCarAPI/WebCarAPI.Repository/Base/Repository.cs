@@ -40,7 +40,7 @@ namespace WebCarAPI.Repository.Base
 
         public List<T> Get(int skip, int take)
         {
-            //todo: o que é skip do linq
+            //todo: Utilizado para paginação.
             return _data.Skip(skip).Take(take).ToList();
         }
 
