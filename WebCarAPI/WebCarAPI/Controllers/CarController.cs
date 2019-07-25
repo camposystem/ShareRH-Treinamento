@@ -27,7 +27,7 @@ namespace WebCarAPI.Controllers
             {
                 _logger.LogInformation("Received get request");
 
-                return Ok(_carService.List());
+                return Ok(_carService.ListAll());
             }
             catch (Exception exception)
             {

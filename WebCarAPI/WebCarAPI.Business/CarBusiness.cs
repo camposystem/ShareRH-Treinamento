@@ -34,6 +34,13 @@ namespace WebCarAPI.Business
             return _carRepository.Get();
         }
 
+
+        public List<Car> ListAll()
+        {
+            return _carRepository.ListAllCars();
+        }
+
+
         public List<Car> ListForBrand(string brand)
         {
             return _carRepository.GetListForBrand(brand);

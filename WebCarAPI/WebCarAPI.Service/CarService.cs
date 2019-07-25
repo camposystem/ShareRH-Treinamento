@@ -35,5 +35,12 @@ namespace WebCarAPI.Service
         {
            return _carBusiness.ListForBrand(brand);
         }
+
+
+        public List<Car> ListAll()
+        {
+            return _carBusiness.ListAll();
+        }
+
     }
 }

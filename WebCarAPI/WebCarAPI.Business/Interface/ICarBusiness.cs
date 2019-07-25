@@ -8,6 +8,7 @@ namespace WebCarAPI.Business.Interface
     {
         void Add(Car car);
         List<Car> List();
+        List<Car> ListAll();
         List<Car> ListForBrand(string brand);
         Car Get(Guid key);
 
