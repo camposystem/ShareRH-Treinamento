@@ -7,5 +7,6 @@ namespace WebCarAPI.Repository.Interface
     public interface ICarRepository: IRepository<Car>
     {
         List<Car> GetListForBrand(string brand);
+        List<Car> ListAllCars();
     }
 }

@@ -4,6 +4,11 @@ using System.Collections.Generic;
 using WebCarAPI.Domain.Interfce;
 using WebCarAPI.Repository.Interface;
 using System.Linq;
+using Microsoft.Extensions.Logging;
+using WebCarAPI.Repository.Utilities;
+using System.Data.SqlClient;
+using Dapper;
+using System.Data;
 
 namespace WebCarAPI.Repository.Base
 {
@@ -11,6 +16,14 @@ namespace WebCarAPI.Repository.Base
     {
 
         private List<T> _data;
+
+        private readonly ILogger<IRepository<T>> _logger;
+
+        protected Repository(ILogger<IRepository<T>> logger)
+        {
+            _logger = logger;
+
+        }
 
         private static object _syncObj = new object();
 
@@ -64,6 +77,32 @@ namespace WebCarAPI.Repository.Base
         public void Delete(T entity)
         {
             _data.Remove(entity);
+        }
+
+        public IEnumerable<T> Query(string query)
+        {
+            SqlConnection conn = ConnectionFactory.GetConnection();
+            try
+            {
+                var result =  conn.Query<T>(query);
+                return result;
+
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, e.Message);
+
+                throw;
+            }
+            finally
+            {
+
+                if ((conn!= null) &&(conn.State != ConnectionState.Closed))
+                {
+                    conn.Close();
+                }
+
+            }
         }
     }
 }

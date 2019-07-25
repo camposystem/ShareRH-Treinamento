@@ -14,6 +14,14 @@ namespace WebCarAPI.Repository
         {
             return Get().Where(b => b.Brand == brand).ToList();
         }
+
+        public List<Car> ListAllCars()
+        {
+            var query = "Select * from TB_Car";
+
+            return this.Query(query).ToList();
+
+        }
     }
 
 }

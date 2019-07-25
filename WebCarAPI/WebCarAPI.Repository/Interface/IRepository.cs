@@ -5,6 +5,8 @@ namespace WebCarAPI.Repository.Interface
 {
     public interface IRepository<T>
     {
+        IEnumerable<T> Query(string query);
+
         T Get(int id);
         T Get(Guid key);
         List<T> Get();
